@@ -1,0 +1,16 @@
+import java.util.Scanner;
+ class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	   System.out.print("Enter a binary number:");
+	   String bin=sc.next();
+	   int ones=0,zeros=0;
+	   for(char c: bin.toCharArray()){
+	       if(c=='1')ones++;
+	       else if(c=='0')zeros++;
+	   }
+	   System.out.println("Number of 1s:"+ones);
+	System.out.println("Number0f 0s:" + zeros);
+	   }
+	    }
